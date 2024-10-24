@@ -1,0 +1,59 @@
+.testimonials-section {
+    background-color: #eaf0ff;
+    padding: 4rem 0;
+}
+
+.testimonial-card {
+    position: relative;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card img {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.testimonial-card .stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.testimonial-card .stars span {
+    font-size: 1.25rem;
+    color: #fbbf24;
+}
+
+.testimonial-card .stars .empty-star {
+    color: #e2e8f0;
+}
+
+/* Center card raised effect */
+.center-card {
+    z-index: 10;
+    transform: translateY(-1rem);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
